@@ -244,6 +244,68 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/12/ditheringMethod/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="不积跬步无以至千里">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="工程信号处理(English)">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/11/12/ditheringMethod/" class="post-title-link" itemprop="url">ditheringMethod</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-11-12 22:33:53 / 修改时间：22:34:44" itemprop="dateCreated datePublished" datetime="2021-11-12T22:33:53+08:00">2021-11-12</time>
+            </span>
+
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="抖动算法"><a href="#抖动算法" class="headerlink" title="抖动算法"></a>抖动算法</h1>
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/12/lineDetect/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -330,7 +392,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/11/12/stepCount/" class="post-title-link" itemprop="url">stepCount</a>
+            <a href="/2021/11/12/stepCount/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -339,10 +401,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-11-12 11:38:59 / 修改时间：11:45:32" itemprop="dateCreated datePublished" datetime="2021-11-12T11:38:59+08:00">2021-11-12</time>
+              <time title="创建时间：2021-11-12 11:39:10" itemprop="dateCreated datePublished" datetime="2021-11-12T11:39:10+08:00">2021-11-12</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-12-04 21:23:04" itemprop="dateModified" datetime="2021-12-04T21:23:04+08:00">2021-12-04</time>
+              </span>
 
           
 
@@ -357,12 +425,35 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="实现计步算法"><a href="#实现计步算法" class="headerlink" title="实现计步算法"></a>实现计步算法</h1><p>手机能够计步，依靠的是加速度传感器，如果能够获取加速度传感器，我们也能自己设计计步算法。</p>
+          <ul>
+<li><h1 id="实现计步算法"><a href="#实现计步算法" class="headerlink" title="实现计步算法"></a>实现计步算法</h1><p>手机能够计步，依靠的是加速度传感器，如果能够获取加速度传感器，我们也能自己设计计步算法。</p>
 <h2 id="参考网址"><a href="#参考网址" class="headerlink" title="参考网址"></a>参考网址</h2><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/19808224">手机的计步器软件原理是什么？ - 知乎 (zhihu.com)</a></p>
-<h2 id="需要完成的工作"><a href="#需要完成的工作" class="headerlink" title="需要完成的工作"></a>需要完成的工作</h2><ul>
-<li>获取手机传感器的加速度信息</li>
+<h2 id="需要完成的工作"><a href="#需要完成的工作" class="headerlink" title="需要完成的工作"></a>需要完成的工作</h2><p>在安卓手机中，可以很方便地调用加速度传感器，获取手机的姿态信息。本课程提供一个简易的安卓app，能够实现手机加速度传感器信息的获取，用户界面如下，其中，X-Axis、Y-Axis和Z-Axis是加速度传感器三个方向的加速度值，Time是系统时间，时间格式为“分钟， 秒， 毫秒”。</p>
+<p>demo App的下载链接在<a href="base.apk"><code>这里</code></a></p>
+<p>关于这个app的简要说明，可以参考<a href="user_guide.txt"><code>这篇用户指南</code></a></p>
+<p><img src="image-20211204205335817.png" alt="image-20211204205335817"></p>
+</li>
+</ul>
+<ul>
+<li>读取csv文件，绘制图像</li>
+</ul>
+<p>  对于不方便使用app的同学，本次作业提供一些以csv格式存储的数据，用于辅助算法的设计以及验证。</p>
+<p>  csv文件的下载链接在[这里]</p>
+<ul>
 <li>选用合适的滤波算法滤除杂波</li>
+</ul>
+<ul>
+<li>设计合适的算法，探测波峰和波谷</li>
+</ul>
+<ul>
 <li>设计算法实现计步</li>
+</ul>
+<h2 id="对于心有余力的同学"><a href="#对于心有余力的同学" class="headerlink" title="对于心有余力的同学"></a>对于心有余力的同学</h2><p>  如果这个作业激起了你的探索欲望，鼓励大家在这个小作业的基础上做延伸工作，同学们的工作内容会在经过整理之后成为课程的一部分。</p>
+<p>  <code>下面的拓展选项不是必选，同学们酌情做出选择</code></p>
+<ul>
+<li>拓展选项：列举可能会出现的常见运动状态，设计算法区分这几种运动状态；</li>
+<li>拓展选项：手机APP有定位功能，开发app获取手机的定位，使用电脑或在app中绘制行走轨迹，区分走路和跑步的轨迹。</li>
+<li>拓展选项：加速度信号经过两次积分能够变成位移信号，能否设计基于加速度传感器的距离测量方法，计算步幅信息。</li>
 </ul>
 
       
@@ -530,7 +621,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
