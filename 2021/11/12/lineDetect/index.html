@@ -22,18 +22,18 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="车道线检测车道线检测是图像识别的常见应用，最常见的是使用Hough变换完成车道线检测，请同学们先复现图片中常见的车道线检测算法，然后识别视频中的直线。">
+  <meta name="description" content="车道线检测车道线检测是图像识别的常见应用，希望同学们通过完成这个作业获得车道线检测的经验。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="lineDetect">
 <meta property="og:url" content="http://example.com/2021/11/12/lineDetect/index.html">
 <meta property="og:site_name" content="工程信号处理(English)">
-<meta property="og:description" content="车道线检测车道线检测是图像识别的常见应用，最常见的是使用Hough变换完成车道线检测，请同学们先复现图片中常见的车道线检测算法，然后识别视频中的直线。">
+<meta property="og:description" content="车道线检测车道线检测是图像识别的常见应用，希望同学们通过完成这个作业获得车道线检测的经验。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2021/11/12/lineDetect/test1.jpg">
 <meta property="og:image" content="http://example.com/2021/11/12/lineDetect/image-20211205220340937.png">
 <meta property="og:image" content="http://example.com/2021/11/12/lineDetect/image-20211205220352479.png">
 <meta property="article:published_time" content="2021-11-12T03:46:12.000Z">
-<meta property="article:modified_time" content="2021-12-05T14:04:03.000Z">
+<meta property="article:modified_time" content="2021-12-05T15:20:41.000Z">
 <meta property="article:tag" content="大作业">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/11/12/lineDetect/test1.jpg">
@@ -207,7 +207,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-12-05 22:04:03" itemprop="dateModified" datetime="2021-12-05T22:04:03+08:00">2021-12-05</time>
+                <time title="修改时间：2021-12-05 23:20:41" itemprop="dateModified" datetime="2021-12-05T23:20:41+08:00">2021-12-05</time>
               </span>
 
           
@@ -230,18 +230,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="车道线检测"><a href="#车道线检测" class="headerlink" title="车道线检测"></a>车道线检测</h1><p>车道线检测是图像识别的常见应用，最常见的是使用Hough变换完成车道线检测，请同学们先复现图片中常见的车道线检测算法，然后识别视频中的直线。</p>
+        <h1 id="车道线检测"><a href="#车道线检测" class="headerlink" title="车道线检测"></a>车道线检测</h1><p>车道线检测是图像识别的常见应用，希望同学们通过完成这个作业获得车道线检测的经验。</p>
 <span id="more"></span>
 
 <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/live4046/article/details/104576263">Opencv-Python处理车道线检测_live4046的博客-CSDN博客</a></p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/36351720">MATLAB 车道线识别 - 知乎 (zhihu.com)</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/merbar/CarND-Vehicle-Detection">merbar/CarND-Vehicle-Detection: Monocular vehicle detection using SVM and Deep Learning classifiers (github.com)</a></p>
-<h2 id="需要完成的任务"><a href="#需要完成的任务" class="headerlink" title="需要完成的任务"></a>需要完成的任务</h2><ul>
-<li>掌握基础的图像处理知识</li>
-</ul>
-<p>我们经常以RGB的方式存储图片，对图像中的像素点进行运算就可以提取图像中的信息。</p>
+<h2 id="需要完成的任务"><a href="#需要完成的任务" class="headerlink" title="需要完成的任务"></a>需要完成的任务</h2><p>希望同学们可以完成车道线的识别，供同学们使用的素材可以在后面的链接中下载。</p>
 <p>下面给出一张行车图像，希望大家能够使用图像处理的方式，提取图中的车道线。</p>
 <p><img src="test1.jpg" alt="test1.jpg"></p>
+<p>实现车道线检测的方式有很多，不限制同学们的发挥，希望大家能用自己擅长的方式完成车道线的识别。下面这些方法可能会对同学们的工作有帮助：</p>
 <ul>
 <li>使用Sobel算子实现边缘检测算法（PS：这一步不是必选，不限制同学们用到的方法）</li>
 </ul>
@@ -250,12 +248,14 @@
 <p><img src="image-20211205220352479.png" alt="image-20211205220352479">  </p>
 <p>使用这两种算子对图像进行卷积，就可以求出x方向和y方向上像素值的梯度。</p>
 <ul>
-<li>实现图片中的车道线检测</li>
+<li>使用霍夫变换完成直线识别</li>
 </ul>
-<p>需要更多图片，请点击<a href="test_images.zip">这个链接</a></p>
+<p>霍夫变换是一种应用非常普遍的直线识别方法，集成在了opencv库中。合理调用opencv库中的概率霍夫变换函数，能识别图像中的很多线。</p>
 <ul>
-<li>实现视频中的车道线检测</li>
+<li>使用仿射变换获取垂向视角</li>
 </ul>
+<p>由于透视原理，摄像机拍到的路面总是近大远小。使用仿射变换能够逆透视，消除透视对直线识别的影响。</p>
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><p>需要更多图片，请点击<a href="test_images.zip">这个链接</a></p>
 <p>下载测试视频，请点击<a href="test_video.zip">这个链接</a></p>
 
     </div>
@@ -350,7 +350,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%A6%E9%81%93%E7%BA%BF%E6%A3%80%E6%B5%8B"><span class="nav-number">1.</span> <span class="nav-text">车道线检测</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">1.1.</span> <span class="nav-text">参考资料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9C%80%E8%A6%81%E5%AE%8C%E6%88%90%E7%9A%84%E4%BB%BB%E5%8A%A1"><span class="nav-number">1.2.</span> <span class="nav-text">需要完成的任务</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%A6%E9%81%93%E7%BA%BF%E6%A3%80%E6%B5%8B"><span class="nav-number">1.</span> <span class="nav-text">车道线检测</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">1.1.</span> <span class="nav-text">参考资料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9C%80%E8%A6%81%E5%AE%8C%E6%88%90%E7%9A%84%E4%BB%BB%E5%8A%A1"><span class="nav-number">1.2.</span> <span class="nav-text">需要完成的任务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%84%E5%BD%95"><span class="nav-number">1.3.</span> <span class="nav-text">附录</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
